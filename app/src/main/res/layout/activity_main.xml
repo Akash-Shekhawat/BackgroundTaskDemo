@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Background Task"
+        android:textColor="@color/teal_200"
+        android:textSize="38sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/btnReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="Receiver" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginHorizontal="24dp" >
+
+        <Button
+            android:id="@+id/btnServiceStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Music"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnServiceStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop Music"
+            android:layout_margin="4dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLocalService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local Service"
+        android:layout_marginHorizontal="24dp" />
+
+
+</LinearLayout>
